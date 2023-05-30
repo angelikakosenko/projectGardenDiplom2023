@@ -1,0 +1,54 @@
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.titleContainer {
+  background-color: #00000023;
+  border-radius: 20px;
+  color: #525151;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.title span {
+  font-weight: 500;
+}
+.linkToMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #00000023;
+  color: #525151;
+  cursor: pointer;
+}
+.linkToMain:hover {
+  transition: 0.5s;
+  color: green;
+  gap: 30px;
+}
+.linkToMain a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #525151;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.linkToMain a:hover {
+  color: green;
+  transition: 0.5s;
+}
+.icon {
+  font-weight: 500;
+  font-size: 36px;
+}

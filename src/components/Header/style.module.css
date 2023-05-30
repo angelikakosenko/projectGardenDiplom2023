@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 80px;
+  top: 0;
+  background-color: #ffffffbb;
+  transition: 0.5s;
+  z-index: 1000;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 72px;
+  height: 72px;
+}
+.catalogBtn {
+  background-color: #339933;
+  padding: 15px 30px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+.catalogBtn:hover {
+  transition: 0.5s;
+  background-color: #33993367;
+  color: #000;
+}
+.navBurgerBtn {
+  width: 30px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.navBurgerBtn span {
+  position: absolute;
+  top: 9px;
+  left: -2px;
+  width: 20px;
+  background-color: #000;
+  height: 2px;
+}
+.navBurgerBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 20px;
+  background-color: #000;
+  height: 2px;
+}
+.navBurgerBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2px;
+  width: 20px;
+  background-color: #000;
+  height: 2px;
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.navContainer nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  color: #000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  border: 10x solid #000;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.basketImg {
+  background-image: url("./basket.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+}
+.basketImg:hover {
+  text-align: center;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 2510px) {
+  .navBurgerBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navBurgerBtn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .catalogBtn {
+    display: none;
+  }
+  .navContainer nav {
+    display: none;
+  }
+  .navBurgerBtn {
+    display: block;
+  }
+}

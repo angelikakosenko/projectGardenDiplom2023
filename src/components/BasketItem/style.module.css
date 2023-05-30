@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 20px;
+  border-bottom: 1px solid #a7a7a7;
+  border-top: 1px solid #a7a7a7;
+}
+.container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.itemInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.titleContainer > p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #3a3a3a;
+}
+.countItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+.countItem > p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 7px;
+}
+.countItem button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 35%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.countItem button:hover {
+  transition: 0.5s;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+}
+.priceContainer {
+  display: flex;
+  gap: 50px;
+  align-items: baseline;
+  margin-top: 10%;
+}
+.discount {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #000;
+}
+.normalPrice {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #000;
+}
+
+.price {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+  text-decoration: line-through;
+}
+.deleteItem {
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.deleteItem:hover {
+  transition: 0.3s;
+  color: red;
+}

@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: start;
+  justify-items: center;
+  text-align: left;
+}
+.container:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.addBtn {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  width: 80%;
+  text-align: center;
+  padding: 15px 35px;
+  background-color: #f1fff1;
+  border: 3px solid #339933;
+  border-radius: 18px;
+  color: #339933;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.addBtn:hover {
+  transition: 0.5s;
+  color: #f1fff1;
+  background-color: #339933;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container img {
+  width: 100%;
+  height: 295px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.container img:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.priceInfo {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  text-align: left;
+}
+.discount {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #000;
+}
+
+.price {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+  text-decoration: line-through;
+}
+
+.precent {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  color: #ff32a1;
+}
+
+.productsTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3a3a3a;
+}

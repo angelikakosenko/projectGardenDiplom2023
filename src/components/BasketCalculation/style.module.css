@@ -1,0 +1,105 @@
+.container {
+  padding: 25px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 15px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.titleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleContainer > h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.cleanBtn {
+  border: none;
+  background-color: rgba(184, 79, 79, 0.911);
+  color: #302c2c;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  height: 55px;
+}
+.cleanBtn:hover {
+  transition: 0.5s;
+  background-color: rgba(184, 79, 79, 0.555);
+}
+.totalSumContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titleTotalSum {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Montserrat";
+}
+.totalSum {
+  font-weight: 600;
+  font-size: 32px;
+}
+.cuponSaleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.cuponSaleInfo {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #8b8b8b;
+}
+.cuponSaleSum {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  color: #ff32a1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.form input {
+  padding: 25px;
+  border: 1px soliid #000;
+  border-radius: 20px;
+}
+
+.form button {
+  align-items: center;
+  padding: 20px;
+  background-color: #339933;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.form button:hover {
+  transition: 0.5s;
+  background-color: rgba(184, 79, 79, 0.555);
+}
+.form button:disabled {
+  background-color: #33993377;
+}
+@media only screen and (max-width: 1020px) {
+  .container {
+    width: 100%;
+  }
+
+}

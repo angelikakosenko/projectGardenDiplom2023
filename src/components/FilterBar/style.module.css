@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.filterBtn {
+  width: 40px;
+  height: 60px;
+  position: fixed;
+  left: -18px;
+  top: 30%;
+  background-color: #339933;
+  border: none;
+  border-radius: 50%;
+  text-align: right;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.filterBtn:hover {
+  background-color: #206420;
+}
+
+.filterPrice {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+p {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+.filterPrice input {
+  width: 120px;
+  height: 20px;
+  border-radius: 7px;
+  padding: 10px;
+}
+.filterPrice input::-webkit-outer-spin-button,
+.filterPrice input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.filterDiscontProduct {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filterDiscontProduct input {
+  width: 30px;
+  height: 30px;
+}
+
+.sortProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.sortProduct select {
+  width: 120px;
+  height: 45px;
+  border-radius: 7px;
+  color: #797979;
+  padding: 5px;
+  outline: none;
+}
+.resetFilterBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #339933;
+  font-size: 20px;
+  border: 2px solid #00000059;
+  color: #fff;
+  cursor: pointer;
+}
+.resetFilterBtn:hover {
+  background-color: #b43a3a75;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 2510px) {
+  .filterBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .resetFilterBtn {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .filterBtn {
+    display: block;
+  }
+  .filterPrice {
+    display: none;
+  }
+  .filterDiscontProduct {
+    display: none;
+  }
+  .sortProduct {
+    display: none;
+  }
+}

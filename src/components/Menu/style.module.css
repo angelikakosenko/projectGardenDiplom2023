@@ -1,0 +1,61 @@
+.menu {
+  position: fixed;
+  width: 100vh;
+  height: 30%;
+  top: 0;
+  left: 0;
+  transform: translateX(-200%);
+  transition: all 0.5s;
+}
+.active {
+  position: fixed;
+  width: 100vh;
+  height: 30%;
+  top: 100px;
+  left: 0;
+  transform: translateX(0);
+  transition: all 0.5s;
+  z-index: 1000;
+}
+
+.blur {
+  width: 200vh;
+  height: 100vh;
+  left: 0;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.menuContent {
+  width: 35%;
+  height: 200px;
+  background-color: #4caf50;
+  border-radius: 0px 11px 70px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2px;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+}
+li {
+  list-style: none;
+  padding: 2px;
+}
+a:hover {
+  transition: 0.5s;
+  color: #000;
+}

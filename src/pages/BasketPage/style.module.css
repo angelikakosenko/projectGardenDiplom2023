@@ -1,0 +1,43 @@
+.container {
+  padding: 80px 30px;
+}
+.basketInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.container > h1 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 40px;
+}
+.container a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.linkToMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.linkToMain:hover {
+  content: ">";
+  transition: 0.5s;
+  color: red;
+  gap: 30px;
+}
+.basketItemContainer {
+  width: 60%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .basketInfoContainer {
+    flex-direction: column;
+  }
+  .basketItemContainer {
+    width: 100%;
+  }
+}

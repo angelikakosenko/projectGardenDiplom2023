@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 500px;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+}
+
+.sendCuponImg {
+  background-image: url("./cuponImg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 420px;
+}
+
+.sendCuponForm {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.cuponText {
+  text-align: left;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+}
+.cuponTitle {
+  font-size: 90px;
+  letter-spacing: 3%;
+  padding: 0;
+  margin: 0;
+}
+
+.cuponSubtitle {
+  font-size: 49px;
+  margin: 0;
+}
+
+.containerSubmitNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.containerSubmitNumber input {
+  border: none;
+  padding: 30px 50px;
+  border-radius: 25px;
+  color: #6c6c6c;
+  width: 370px;
+  outline: none;
+}
+
+.containerSubmitNumber button {
+  background-color: transparent;
+  padding: 20px 70px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+  letter-spacing: 3%;
+  cursor: pointer;
+}
+
+.containerSubmitNumber button:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  border: 2px solid #006300;
+}
+
+@media only screen and (max-width: 992px) {
+  .sendCuponImg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sendCuponForm {
+    align-items: center;
+  }
+  .cuponTitle {
+    font-size: 40px;
+  }
+  .cuponSubtitle {
+    font-size: 20px;
+  }
+  .containerSubmitNumber input {
+    width: 207px;
+  }
+}

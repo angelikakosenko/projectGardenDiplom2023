@@ -1,0 +1,21 @@
+.container {
+  padding: 13px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

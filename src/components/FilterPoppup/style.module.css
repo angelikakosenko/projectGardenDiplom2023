@@ -1,0 +1,123 @@
+.active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  gap: 50px;
+  padding: 20px;
+  color: #fff;
+  width: 200px;
+  top: 40%;
+  border-radius: 20px;
+  background-color: #339933;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  transform: translateX(0);
+  transition: all 0.5s;
+  z-index: 1000;
+}
+
+.filterPoppup {
+  position: absolute;
+  top: 40%;
+  width: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #339933;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  transform: translateX(-300%);
+  transition: all 0.5s;
+  z-index: 1000;
+  color: #fff;
+}
+
+.filterPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.filterPrice::after {
+  content: "";
+  width: 172%;
+  height: 1px;
+  background: linear-gradient(86deg, #fffffffa -38.43%, #00000000 93.36%);
+}
+p {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+.filterPrice input {
+  width: 120px;
+  height: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.filterPrice input::-webkit-outer-spin-button,
+.filterPrice input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.filterDiscontProduct {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.filterDiscontProduct::after {
+  content: "";
+  width: 165%;
+  height: 1px;
+  background: linear-gradient(86deg, #fffffffa -38.43%, #00000000 93.36%);
+}
+
+.filterDiscontProduct input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sortProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.sortProduct::after {
+  content: "";
+  width: 200%;
+  height: 1px;
+  background: linear-gradient(86deg, #fffffffa -38.43%, #00000000 93.36%);
+}
+.sortProduct select {
+  width: 120px;
+  height: 45px;
+  border-radius: 7px;
+  border: none;
+  color: #797979;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.resetFilterBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 20px;
+  border: 2px solid #00000059;
+  color: #fff;
+  cursor: pointer;
+}
+.resetFilterBtn:hover {
+  background-color: #b43a3a75;
+  transition: all 0.5s;
+}
+

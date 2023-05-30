@@ -1,0 +1,87 @@
+.saleBanner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a1e2eb;
+  align-items: center;
+  width: 100%;
+}
+
+.linkToSale {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 50%;
+}
+.saleTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.title {
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+  font-size: 80px;
+  padding: 0;
+  text-align: left;
+}
+.subTitle {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  padding: 0;
+  margin-bottom: 60px;
+  text-align: left;
+}
+.saleTitle button {
+  padding: 25px 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.bannerImgContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  width: 50%;
+}
+.bannerImgContainer img {
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 2510px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .bannerImgContainer img {
+    width: 100%;
+  }
+  .saleBanner {
+    padding: 50px 0 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerImgContainer {
+    width: 60%;
+  }
+  .linkToSale {
+    width: 30%;
+  }
+  .title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bannerImgContainer img {
+    display: none;
+  }
+}
